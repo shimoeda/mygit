@@ -12,8 +12,8 @@ from matplotlib import font_manager
 間取り、面積、URL
 """
 ########################
-factor_1 = "面積"
-factor_2 = "家賃"
+factor_1 = "家賃"
+factor_2 = "面積"
 ########################
 
 # 日本語の設定
@@ -24,7 +24,7 @@ matplotlib.rc("font", family="IPAexGothic")
 df = pd.read_csv("./data/yokohama_kawasaki.csv", encoding="utf-8")
 
 # 指定された列における駅ごとの各項目の平均値の取得
-df_group = df.groupby(["路線"]).mean()
+df_group = df.groupby(["京急本線"]).mean()
 X = df_group.loc[:, factor_1]
 Y = df_group.loc[:, factor_2]
 T = df_group.index
