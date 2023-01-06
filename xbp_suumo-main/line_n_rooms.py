@@ -12,7 +12,7 @@ from matplotlib import font_manager
 間取り、面積、URL
 """
 ########################
-factor = "路線"
+factor = "京急本線"
 ########################
 
 # 日本語の設定
